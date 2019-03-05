@@ -64,12 +64,12 @@ class TupleDesc:
 
         return TupleDesc(type_arr, field_arr)
 
-    def equals(self, o) -> bool:
+    def __eq__(self, o) -> bool:
         if not isinstance(o, TupleDesc):
             return False
         if self.get_size() != o.get_size():
             return False
-        for i in range(self.get_size()):
+        for i in range(self.num_fields()):
             if self.items[i].field_type != o.items[i].field_type:
                 return False
         return True

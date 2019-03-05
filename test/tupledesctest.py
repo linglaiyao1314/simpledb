@@ -4,7 +4,7 @@ from src.type import IntType
 from src.utility import Utility
 
 
-class TestFundedResearch(unittest.TestCase):
+class TestTupleDesc(unittest.TestCase):
     def setUp(self):
         pass
 
